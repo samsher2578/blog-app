@@ -4,6 +4,8 @@ import { PortableText } from "@portabletext/react";
 import { url } from "inspector";
 import Image from "next/image";
 
+export const revalidate = 30; // revalidate at most every 30 sec
+
 async function getData(slug: string) {
   const quary = `*[_type == "blog" && slug.current == '${slug}']{'currentSlug' : slug.current,title,content,titleImage,}[0]`;
 
