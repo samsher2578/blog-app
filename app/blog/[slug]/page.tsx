@@ -37,7 +37,7 @@ export default async function BlogArtical({
         height={800}
         className="rounded-lg mt-8 mx-auto"
       />
-      <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-p:text-gray-300 prose-li:marker:text-primary prose-li:text-gray-400">
+      <div className="mt-16 prose prose-blue prose-lg dark:prose-invert  prose-li:marker:text-primary prose-li:text-gray-600">
         <PortableText value={data.content} />
       </div>
     </div>
